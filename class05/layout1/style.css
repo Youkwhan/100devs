@@ -1,0 +1,35 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	height: 100%;
+}
+
+header,
+footer {
+	height: 150px;
+	border: 1px solid red;
+  clear: both;
+}
+
+main {
+	height: 500px;
+}
+
+.three-column > section.content {
+	width: 33.333%;
+  height: 200px;
+}
+
+.two-column > section.content{
+	width: 50%;
+  height: 300px;
+}
+
+section.content {
+	border: 2px solid blue;
+	height: 100%;
+	float: left;
+}
