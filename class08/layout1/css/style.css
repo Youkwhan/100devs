@@ -1,16 +1,16 @@
 /* Box Model Hack */
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
 }
 
 .clear {
@@ -22,21 +22,159 @@
 /*******************************************/
 
 body {
-
+	max-width: 1920px;
+	margin: 0 auto;
+	font-family: sans-serif;
 }
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
+.viewport {
+	margin: 0 auto;
+	width: 80%;
+}
 
+/* HEADER */
+header {
+	background-color: black;
+	font-weight: 600;
+	font-size: 0.8rem;
+	letter-spacing: 0.5px;
+}
+
+nav {
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+}
+
+nav > * {
+	float: left;
+}
+
+.navbar > * {
+	list-style: none;
+	float: left;
+}
+
+.logo {
+	width: 5rem;
+	margin: -10px 0;
+}
+
+.pfp {
+	width: 2rem;
+	background-color: white;
+}
+
+/* MAIN CONTENT */
+
+.main,
+.news {
+	margin-block: 25px;
+}
+.main > * {
+	display: inline;
+}
+
+.main-article {
+	width: 100%;
+}
+
+.main-article1 {
+	width: 55%;
+	float: left;
+	background-image: url("../assets/Isreal-and-UAE-stike-historic-peace-deal.png");
+	background-size: cover;
+	height: 400px;
+	padding: 200px 20px;
+	position: relative;
+}
+
+.main-article1::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+	z-index: 1;
+}
+
+.main-article1 h1 {
+	color: white;
+	font-weight: 400;
+}
+
+.main-article-sub {
+	width: 45%;
+	float: left;
+}
+
+.main-article-sub > article {
+	width: 48%;
+	float: left;
+	border: 1px solid grey;
+	height: 195px;
+	margin: 0 0 10px 10px;
+	padding: 70px 10px 0 10px;
+}
+
+.news-article > * {
+	width: 33%;
+	float: left;
+	margin-right: 0.3rem;
+	height: 300px;
+	border: 1px solid grey;
+	padding: 120px 10px 0 10px;
+}
+
+.news-article > *:last-child {
+	margin-right: 0;
 }
 
 footer {
-
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+a {
+	text-decoration: none;
+	color: white;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+li {
+	border-inline: 1px solid grey;
+	padding: 1rem;
+}
+
+.date {
+	float: right;
+	color: grey;
+	font-size: 1.5rem;
+}
+
+article p,
+article span {
+	color: rgb(114, 114, 114);
+	text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+span::before {
+	content: "|";
+	margin-right: 0.2em;
+	color: red;
+}
