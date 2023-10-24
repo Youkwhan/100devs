@@ -1,16 +1,16 @@
 /* Box Model Hack */
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
 }
 
 .clear {
@@ -21,22 +21,146 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
-
+body,
+section {
+	width: 100%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	line-height: 1.2;
 }
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
+nav,
+main,
+aside {
+	float: left;
+	padding: 2rem;
 }
 
-footer {
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
 
+nav div {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+nav div a {
+	display: block;
+	margin-top: 5px;
+}
+
+nav div a:first-child {
+	color: orange;
+	font-weight: bold;
+}
+
+.content {
+	margin-left: 15%;
+}
+main {
+	width: 60%;
+}
+
+aside {
+	width: 30%;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+a {
+	text-decoration: none;
+}
+
+h4 {
+	color: green;
+}
+
+.latest, article {
+	width: 90%;
+}
+
+.latest{
+	margin-left: 15%;
+}
+
+.article-sub {
+	width: 33.33%;
+	float: left;
+	padding: 10px;
+}
+.column h3 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.column .author-name {
+	font-weight: bold;
+}
+
+.column p {
+	font-size: 14px;
+}
+
+.column img {
+	max-width: 100%;
+	height: auto;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+nav img.logo {
+	width: 4rem;
+}
+
+main img {
+	display: block;
+	width: 100%;
+}
+
+main h1 {
+	font-weight: bold;
+}
+p,
+a {
+	color: gray;
+}
+
+span.author-name {
+	font-weight: 600;
+	color: rgb(80, 80, 80);
+	padding-bottom: 10px;
+	display: block;
+}
+
+.topic-title {
+	border-bottom: 1px solid gray;
+}
+
+li.topic-title:last-child {
+	border: none;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+	aside {
+		width: 50%; /* Adjust the width for smaller screens */
+		font-size: 0.8rem; /* Decrease the font size for smaller screens */
+	}
+}
