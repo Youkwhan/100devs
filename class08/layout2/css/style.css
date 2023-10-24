@@ -1,16 +1,16 @@
 /* Box Model Hack */
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
 }
 
 .clear {
@@ -22,21 +22,115 @@
 /*******************************************/
 
 body {
-
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.2;
 }
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 header {
-
+	width: 100%;
+	background-color: rgb(247, 253, 255);
+	color: rgb(0, 132, 255);
+	font-weight: bold;
+	overflow: auto;
+	box-shadow: 5px 0 5px grey;
+}
+nav,
+main {
+	width: 80%;
+	margin: 0 auto;
 }
 
-footer {
-
+.left,
+.center,
+.right {
+	display: inline-block;
+	vertical-align: center;
 }
 
+.left {
+	float: left;
+	text-align: left;
+	padding-block: 15px;
+	width: 30%;
+}
+
+.center {
+	text-align: center;
+	width: 40%;
+	margin: 0 auto;
+	padding-block: 10px;
+}
+
+.right {
+	float: right;
+	text-align: right;
+	width: 30%;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	display: inline;
+	margin-right: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(0, 132, 255);
+}
+
+main {
+	margin-top: 5rem;
+}
+
+.left-section,
+.right-section {
+	float: left;
+}
+
+.left-section {
+	width: 40%; /* Adjust this value as needed */
+	padding: 10px; /* Add any desired padding */
+	margin-right: 3rem;
+}
+
+.right-section {
+	width: 50%; /* Adjust this value as needed */
+	padding: 10px; /* Add any desired padding */
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+.logo {
+	width: 12rem;
+}
+
+.right-float {
+	float: right;
+}
+
+h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 3rem;
+}
+
+h1 span {
+	text-decoration: underline aquamarine;
+}
+
+.right-section p {
+	letter-spacing: 1px;
+}
+
+.right-section ul li a {
+	padding: 10px 8px;
+	border-radius: 5px;
+	color: #fff;
+	background-color: rgb(0, 38, 255);
+}
