@@ -1,0 +1,228 @@
+/* Box Model Hack */
+* {
+	box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+	width: 100%;
+	text-align: center;
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+nav {
+	width: 80%;
+	margin: 0 auto;
+	/* overflow: hidden; */
+	height: 50px;
+}
+
+nav .nav-left {
+	float: left;
+	margin-right: 35%;
+}
+
+nav .nav-mid img {
+	/* margin: 0 auto; */
+	width: 3rem;
+	float: left;
+}
+
+nav .nav-right {
+	float: right;
+	margin-top: 13px;
+}
+
+header,
+#home {
+	color: white;
+	background-color: #66768a;
+}
+
+.home-container {
+	width: 80%;
+	margin: 0 auto;
+	padding: 5rem 4rem 10rem;
+}
+
+.home-container p {
+	padding-inline: 5rem;
+}
+
+section {
+	width: 100%;
+}
+
+#why-section {
+	width: 40%;
+	margin: 10rem auto;
+}
+
+#service {
+	width: 100%;
+	background-color: #dbdfe2;
+	padding-block: 10rem;
+}
+
+.service-container {
+	width: 80%;
+	margin: 0 auto;
+	/* overflow: hidden; */
+}
+
+.service-container div img {
+	object-fit: cover;
+	aspect-ratio: 2/1;
+}
+
+.left-service {
+	float: left;
+	width: 45%;
+}
+
+.right-service {
+	float: right;
+	width: 45%;
+}
+
+#volunteer {
+	width: 100%;
+}
+
+.volunteer-container {
+	width: 45%;
+	margin: 10rem auto;
+}
+
+footer {
+	background-color: #171f2a;
+	padding: 2rem 3rem;
+	text-align: start;
+}
+
+footer ul {
+	margin: 0 0 15px;
+}
+
+footer span {
+	color: gray;
+	font-weight: bold;
+}
+
+.footer-left {
+	width: 25%;
+	float: left;
+}
+
+.footer-right {
+	width: 15%;
+	float: right;
+	color: white;
+}
+
+footer img {
+	width: 3rem;
+}
+
+footer p,
+footer li {
+	margin: 0;
+}
+
+.footer-links li {
+	margin-right: 20px;
+}
+
+footer + div {
+	border-bottom: 1px solid gray;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 13px;
+}
+
+li {
+	display: inline;
+	margin-right: 10px;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+}
+
+.nav-right a {
+	color: #66768a;
+	padding: 0.8rem;
+	border-radius: 5px;
+	background-color: white;
+}
+
+h1 {
+	font-size: 5rem;
+	letter-spacing: -5px;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+img {
+	width: 100%;
+}
+
+p {
+	margin-bottom: 4rem;
+}
+
+.btn {
+	color: black;
+	border: 1px solid gray;
+	padding: 1rem 3rem;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.hr {
+	padding-top: 1rem;
+	border-bottom: 2px solid gray;
+	margin-bottom: 1rem;
+}
+.sign {
+	color: white;
+	font-weight: bold;
+}
