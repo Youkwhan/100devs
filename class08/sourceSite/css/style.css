@@ -1,16 +1,16 @@
 /* Box Model Hack */
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
 }
 
 .clear {
@@ -22,19 +22,21 @@
 /*******************************************/
 
 body {
-
+	background-color: #fff;
+	width: 100%;
 }
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
+#home {
+	background-color: #f5f9fc;
+}
 
+header {
 }
 
 footer {
-
 }
 
 /******************************************
