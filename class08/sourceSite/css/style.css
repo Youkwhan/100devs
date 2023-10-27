@@ -19,7 +19,7 @@
 
 :root {
 	--clr-primary-100: #2f4456;
-	--clr-primary-200: #969da4;
+	--clr-primary-200: #5c6064;
 }
 
 /******************************************
@@ -29,20 +29,91 @@
 body {
 	background-color: #fff;
 	width: 100%;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-#home {
+/* NAVBAR */
+#nav {
 	background-color: #f5f9fc;
 }
 
+nav {
+	padding: 1rem 2rem;
+	text-align: center;
+}
+
+nav > * {
+	display: inline-block;
+	vertical-align: middle;
+}
+.menu {
+	display: none;
+}
+.logo {
+	text-align: left;
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: var(--clr-primary-100);
+}
+
+.center {
+	text-align: center;
+	width: 80%;
+}
+
+.right {
+	text-align: right;
+}
+
+/* HOME */
+.tagline {
+	color: var(--clr-primary-200);
+	font-weight: bold;
+	font-size: medium;
+}
+
+#home {
+	width: 90%;
+	margin: 3rem 0 0 auto;
+}
+
+.home-left h1 {
+	margin-right: 8rem;
+}
+
+.home-left {
+	width: 40%;
+	float: left;
+}
+
+.home-right {
+	width: 40%;
+	float: right;
+}
+
+.search-form {
+	width: 100%;
+}
+
+.search-form input {
+	padding: 0.4rem;
+	margin: 0;
+}
+
+/* FEATURE */
 .container,
 .about-container {
 	width: 80%;
 	margin: 0 auto;
 	color: var(--clr-primary-100);
+}
+
+.features {
+	padding-block: 8rem;
 }
 
 .features article {
@@ -87,7 +158,9 @@ body {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-
+h1 {
+	color: var(--clr-primary-100);
+}
 h2 {
 	font-size: 3rem;
 }
@@ -98,16 +171,90 @@ p {
 
 .half-width {
 	width: 60%;
+	margin-bottom: 2rem;
 }
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	display: inline;
+	margin-right: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: var(--clr-primary-100);
+}
+
+.btn {
+	color: white;
+	background-color: var(--clr-primary-100);
+	font-size: medium;
+	padding: 0.4rem 1rem;
+}
+
 @media screen and (max-width: 640px) {
 	.hide-on-small-screens {
 		display: none;
 	}
+	.home-right {
+		float: none;
+	}
+	.search-form button,
+	input {
+		width: 90%;
+		margin-top: 1rem;
+	}
+
+	/* h2 {
+		font-size: 2.5rem;
+	} */
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 905px) {
+	nav {
+		border-bottom: 2px solid rgb(187, 186, 186);
+	}
+	h2 {
+		font-size: 2.5rem;
+	}
+
 	.features article {
 		width: 40%;
 		margin-bottom: 30px;
+	}
+
+	.home-left {
+		width: 80%;
+		float: none;
+		margin: 0 auto;
+	}
+	.home-right {
+		float: none;
+	}
+
+	.search-form button,
+	input {
+		width: 90%;
+		margin-top: 1rem;
+	}
+
+	nav .center,
+	nav .right {
+		display: none;
+	}
+
+	.half-width {
+		width: 80%;
+	}
+
+	.menu{
+		display:inline-block;
+		float: left;
+		font-size: xx-large;
+
 	}
 }
