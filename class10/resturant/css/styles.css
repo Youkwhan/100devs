@@ -32,7 +32,7 @@ body {
 
 main {
 	position: relative;
-	min-height: 550px;
+	min-height: 700px;
 }
 
 main::before {
@@ -65,14 +65,20 @@ main::before {
 	gap: 1.2rem;
 }
 
+.nav-button button {
+	border: none;
+	background: none;
+	color: black;
+}
+
 /* HOME */
 .home {
 	width: 85%;
-	margin: 0 auto;
+	margin: 5rem auto;
 }
 
-.home-container{
-	width: 50%;
+.home-container {
+	width: 60%;
 }
 
 .main-icons {
@@ -87,13 +93,160 @@ main::before {
 
 /* ABOUT US */
 
+#about {
+	background-image: url("../assets/brooke-lark-of0pMsWApZE-unsplash.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	min-height: 700px;
+	background-position-x: -50%;
+	background-color: #f3f7f8;
+	display: flex;
+}
+
+.about-container {
+	width: 85%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.about-bruh {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* width: 50%; */
+	flex: 0 1 50%;
+	gap: 1.2rem;
+}
+
+.arrow-btn {
+	padding: 0.5rem 1.5rem 0.5rem 1rem;
+	width: 10rem;
+}
+
+.arrow-btn i {
+	float: right;
+	padding-left: 10px;
+}
+
+/* ORDER */
+
+#order {
+	min-height: 700px;
+	display: flex;
+	background-color: #f2f6f7;
+}
+
+.order-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 85%;
+	margin: 0 auto;
+	gap: 1.2rem;
+}
+
+.order-container ul li {
+	margin-right: 0;
+	padding-inline: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid gray;
+}
+
+.order-container ul li:hover {
+	border-bottom: 3px solid orange;
+}
+
+.order-container ul li:hover a {
+	color: orange;
+}
+
+.carousel {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+.carousel > * {
+	position: relative;
+	width: 300px;
+	height: 400px;
+}
+
+.carousel img {
+	width: 100%;
+	aspect-ratio: 1/2;
+	object-fit: cover;
+	width: 300px;
+	height: 400px;
+}
+
+.overlay {
+	position: absolute;
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	width: 300px;
+	height: 400px;
+	white-space: normal;
+	opacity: 0;
+	transition: opacity 0.5s ease-in;
+	background-color: rgba(128, 128, 128, 0.7);
+}
+
+.overlay:hover {
+	/* background-color: gray; */
+	opacity: 80;
+}
+
+.overlay .stars .checked {
+	color: orange;
+}
+
+.overlay p {
+	font-size: 1.2rem;
+	font-weight: 500;
+}
 
 /* ADDITIONAL STYLES */
 
-h1 {
-	font-size: 3rem;
-	width: 50%;
+section{
+	min-height: 700px;
+}
+
+h1,
+h3 {
+	font-size: 3.5rem;
 	text-wrap: wrap;
+	text-shadow: 0px 0px 20px #aaaaaa;
+}
+
+h1 {
+	width: 60%;
+}
+
+h2 {
+	color: orange;
+	font-size: 1rem;
+	text-shadow: 0px 0px 20px #aaaaaa;
+}
+
+h3 {
+	margin: 0;
+}
+
+p {
+	line-height: 1.2;
+	text-shadow: 0px 0px 20px #aaaaaa;
 }
 
 form input {
@@ -102,16 +255,13 @@ form input {
 	width: 30%;
 }
 
-form button {
-	padding: 0.5rem;
-	/* display: inline-block; */
+button {
+	padding: 0.5rem 1rem;
 	background-color: orange;
 	border-radius: 5px;
-}
-
-button {
 	border: none;
-	background: none;
+	cursor: pointer;
+	color: #fff;
 }
 
 ul {
@@ -122,6 +272,10 @@ ul {
 li {
 	display: inline;
 	margin-right: 20px;
+}
+
+li a:hover {
+	color: orange;
 }
 
 a {
