@@ -32,8 +32,135 @@ body {
 nav {
 	max-width: 1280px;
 	margin: 0 auto;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	font-weight: bold;
+	font-size: 1.5rem;
+	font-style: italic;
+}
+
+/* HOME */
+
+main {
+	position: relative;
+	background-image: url(../assets/Screenshot\ 2023-11-10\ 000316.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	overflow: hidden;
+}
+
+.home-container {
+	max-width: 1280px;
+	margin: 12rem auto 0 9rem;
+	color: #fff;
+}
+
+.home-container .service-btn {
+	margin-top: 20px;
+	color: white;
+	background-color: black;
+}
+
+.title {
+	font-weight: 100;
+	font-size: 5rem;
+	margin: 0;
+	width: 50%;
+}
+
+.schedule {
+	float: right;
+	writing-mode: vertical-lr;
+	white-space: nowrap;
+	color: rgb(35, 41, 41);
+}
+
+.ads {
+	margin-top: 5rem;
+	background-color: black;
+	padding: 1.5rem 2rem;
+	display: inline-block;
+	width: 250px;
+	line-height: 1.5;
+}
+
+.home-navigation {
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+}
+/* SERVICE */
+
+.service-container {
+	max-width: 1280px;
+	margin: 10rem auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.2rem;
+	text-align: center;
+	position: relative;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+/* F4F5F6 */
+i {
+	position: relative;
+	font-size: 4rem;
+}
+
+.arw-btn {
+	border: 1px solid black;
+	padding: 0.8rem;
+	border-radius: 50%;
+}
+
+.float-left {
+	float: left;
+}
+.text-lg {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.btn {
+	padding: 1rem 2rem;
+}
+
+button {
+	border: none;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+h1,
+p {
+	letter-spacing: 2px;
+}
+ul {
+	list-style: none;
+	margin: 0;
+}
+
+li {
+	display: inline;
+	margin-right: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+img {
+	width: 100%;
+	display: block;
+}
