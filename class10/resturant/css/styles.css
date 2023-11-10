@@ -74,7 +74,8 @@ main::before {
 /* HOME */
 .home {
 	width: 85%;
-	margin: 5rem auto;
+	margin: 0 auto;
+	padding-block: 5rem;
 }
 
 .home-container {
@@ -148,11 +149,17 @@ main::before {
 	gap: 1.2rem;
 }
 
+.order-filter {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .order-container ul li {
 	margin-right: 0;
 	padding-inline: 20px;
 	padding-bottom: 20px;
 	border-bottom: 1px solid gray;
+	margin-bottom: 10px;
 }
 
 .order-container ul li:hover {
@@ -208,7 +215,7 @@ main::before {
 	opacity: 80;
 }
 
-.overlay .stars .checked {
+.stars .checked {
 	color: orange;
 }
 
@@ -217,10 +224,118 @@ main::before {
 	font-weight: 500;
 }
 
-/* ADDITIONAL STYLES */
+/* BOOK */
+.book-container {
+	width: 85%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1.2rem;
+}
 
-section{
+.book-container i {
+	border-radius: 50%;
+	border: 1px solid orange;
+	padding: 1rem;
+	font-size: 2rem;
+	color: orange;
+}
+
+.book-container .phone {
+	margin-top: 1rem;
+	text-align: center;
+}
+
+.book-container .phone p + p {
+	color: orange;
+	font-weight: bold;
+	font-size: 2rem;
+	margin: 0;
+}
+
+.book-container .time {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.book-container .time p + p {
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.book-container img {
+	width: 500px;
+	height: 400px;
+	object-position: bottom;
+	transform: scaleX(1.2);
+}
+
+@media screen and (max-width: 500px) {
+	.book-container img {
+		width: 300px;
+		height: 400px;
+	}
+}
+
+/* Testimonial */
+#test {
+	background-color: #f2f6f7;
+}
+
+.test-container {
+	width: 85%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1.2rem;
+}
+
+.testimonial-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-block: 2rem;
+}
+
+.testimonial-card img {
+	border-radius: 50%;
+	background-color: #aaaaaa;
+	width: 5rem;
+}
+
+.testimonial-card img + p {
+	font-weight: bold;
+	font-size: 2rem;
+	margin: 1rem 0 0;
+}
+
+.testimonial-card span {
+	color: #aaaaaa;
+	margin-bottom: 1rem;
+}
+
+.testimonial-card .detail {
+	text-align: center;
+	width: 60%;
+	line-height: 1.5;
+}
+
+/* ADDITIONAL STYLES */
+img {
+	width: 100%;
+	object-fit: cover;
+}
+
+section {
+	padding-block: 1rem;
 	min-height: 700px;
+	width: 100%;
 }
 
 h1,
