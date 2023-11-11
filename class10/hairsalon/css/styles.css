@@ -47,34 +47,34 @@ nav {
 /* HOME */
 
 main {
+	width: 100%;
 	position: relative;
-	background-image: url(../assets/Screenshot\ 2023-11-10\ 000316.png);
+	background-image: url("../assets/gundam-1620x800.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
 	overflow: hidden;
+	border-radius: 0 0 10% 0;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 }
 
 .home-container {
 	max-width: 1280px;
-	margin: 12rem auto 0 9rem;
+	margin: 12rem auto 20rem 9rem;
 	color: #fff;
-}
-
-.home-container .service-btn {
-	margin-top: 20px;
-	color: white;
-	background-color: black;
+	text-shadow: 0px 0px 20px #aaaaaa;
 }
 
 .title {
 	font-weight: 100;
 	font-size: 5rem;
 	margin: 0;
-	width: 50%;
+	width: 60%;
 }
 
 .schedule {
+	position: absolute;
+	right: 0;
 	float: right;
 	writing-mode: vertical-lr;
 	white-space: nowrap;
@@ -82,12 +82,18 @@ main {
 }
 
 .ads {
+	position: absolute;
+	bottom: 0;
+	left: 9rem;
+
 	margin-top: 5rem;
 	background-color: black;
 	padding: 1.5rem 2rem;
 	display: inline-block;
 	width: 250px;
 	line-height: 1.5;
+	z-index: 2;
+	color: #fff;
 }
 
 .home-navigation {
@@ -108,11 +114,46 @@ main {
 	position: relative;
 }
 
+/* INFO */
+
+#info {
+	background-color: #f3f4f6;
+}
+
+.info-container {
+	max-width: 1280px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.5rem;
+	padding: 5rem;
+}
+
+.info-container .left {
+	flex-basis: 600px;
+	
+}
+
+.info-container .right img{
+	border-radius: 10px;
+
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-/* F4F5F6 */
-i {
+.service-btn {
+	margin-top: 20px;
+	color: white;
+	background-color: black;
+}
+
+nav i {
+	font-size: 1rem;
+}
+
+.service-container i {
 	position: relative;
 	font-size: 4rem;
 }
@@ -145,6 +186,11 @@ h1,
 p {
 	letter-spacing: 2px;
 }
+
+h3 {
+	font-size: 1.5rem;
+}
+
 ul {
 	list-style: none;
 	margin: 0;
