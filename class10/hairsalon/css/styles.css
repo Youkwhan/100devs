@@ -53,6 +53,7 @@ main {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
+	max-height: 900px;
 	overflow: hidden;
 	border-radius: 0 0 10% 0;
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
@@ -75,16 +76,16 @@ main {
 .schedule {
 	position: absolute;
 	right: 0;
-	float: right;
+	/* float: right; */
 	writing-mode: vertical-lr;
 	white-space: nowrap;
-	color: rgb(35, 41, 41);
+	color: rgb(250, 251, 251);
 }
 
 .ads {
 	position: absolute;
-	bottom: 0;
 	left: 9rem;
+	bottom: 0;
 
 	margin-top: 5rem;
 	background-color: black;
@@ -132,17 +133,124 @@ main {
 
 .info-container .left {
 	flex-basis: 600px;
-	
 }
 
-.info-container .right img{
+.info-container .right img {
 	border-radius: 10px;
+}
 
+/* feature */
+.feature-container {
+	max-width: 1280px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	padding-block: 5rem;
+}
+
+.feature-container img {
+	max-width: 400px;
+	height: 600px;
+}
+
+.caption {
+	position: relative;
+	padding: 0.5rem 1rem;
+	text-align: center;
+	background-color: black;
+	color: white;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: -60px;
+	z-index: 2;
+}
+
+/* promotion */
+.promotion {
+	max-width: 1280px;
+	margin: 5rem auto;
+	background-image: url("../assets/png-transparent-gundam-seed-illustration-gundam-model-char-aznable-zaku-line-art-blaze-miscellaneous-sports-equipment-fictional-character-thumbnail-removebg-preview.png");
+	background-size: contain;
+	background-position: right;
+	padding: 8rem 5rem;
+	background-color: #aaaaaa;
+	background-repeat: no-repeat;
+}
+
+.text-2xl .text-lg {
+	font-size: 3rem;
+}
+
+.promotion button {
+	background-color: black;
+	color: white;
+}
+
+/* gallery */
+.gallery-container {
+	max-width: 1280px;
+	margin: 5rem auto;
+	text-align: center;
+}
+
+.gallery-container h2 {
+	font-size: 3rem;
+	font-weight: 200;
+	margin: 0;
+}
+
+hr {
+	display: inline-block;
+	width: 16px;
+	border: 2px solid black;
+	margin: 1rem auto;
+}
+
+.masonary {
+	display: grid;
+	width: 100%;
+	grid-template-areas:
+		"img1 img2 img3"
+		"img4 img2 img5"
+		"img4 img6 img5";
+	grid-template-rows: auto auto;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 1rem;
+	grid-row-gap: 1rem;
+}
+
+.image01 {
+	grid-area: img1;
+}
+.image02 {
+	grid-area: img2;
+}
+.image03 {
+	grid-area: img3;
+}
+.image04 {
+	grid-area: img4;
+}
+.image05 {
+	grid-area: img5;
+}
+.image06 {
+	grid-area: img6;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+.text-2xl {
+	font-size: xx-large;
+}
+.text-sm {
+	font-size: small;
+	font-weight: 200;
+}
+
 .service-btn {
 	margin-top: 20px;
 	color: white;
@@ -174,6 +282,12 @@ nav i {
 
 .btn {
 	padding: 1rem 2rem;
+}
+
+img {
+	max-width: 100%;
+	object-fit: cover;
+	height: auto;
 }
 
 button {
