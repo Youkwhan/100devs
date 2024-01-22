@@ -5,7 +5,7 @@ imageElement = document.querySelector("img");
 h3InstructionElement = document.querySelector("h3");
 
 function getCockTail() {
-  let userCock = document.querySelector("input").value;
+  let userCock = document.querySelector("input").value.trim();
 
   // let userCock = prompt("Enter a cocktail: ")
   fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${userCock}`)
